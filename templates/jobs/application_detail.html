@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% load inlines_tags markup compress %}
+{% block title %}{{ object.pages.all.0.title }}{% if object.title %} | {{ object.title }}{% endif %}{% endblock %}
+
+{% block extrahead %}
+  {% if object.title %}<meta name="base-title" content=" | {{ object.title }}">{% endif %}
+{% endblock %}
+
+{% block content %}
+  <header>
+    <nav>
+      <ul>
+        {% for page in object.pages.all %}<li><a id="ldmk_{{ page.slug }}" href="#{{ page.slug }}" {% if forloop.first %}class="here"{% endif %}>{{ page.title }}</a></li>{% endfor %}
+      </ul>
+    </nav>
+  </header>
+  <div role="main" id="main">
+    {% for page in object.pages.all %}
+    <div id="{{ page.slug }}" class="page">
+      <div class="pageWrapper">
+        <h1>{{ object.title }}</h1>
+        <h2>{{ page.title }}</h2>
+        {{ page.content|render_inlines|markdown }}
+      </div>
+    </div>
+    {% if not forloop.last %}<hr>{% endif %}
+    {% endfor %}
+  </div>
+{% endblock %}
+
+{% block scripts %}
+  {% compress js inline %}
+  <script src="{{ STATIC_URL }}js/jquery-1.7.1.min.js"></script>
+  <script src="{{ STATIC_URL }}js/history.js"></script>
+  <script src="{{ STATIC_URL }}js/history.adapter.jquery.js"></script>
+  <script src="{{ STATIC_URL }}js/job.js"></script>
+  {% endcompress %}
+{% endblock %}

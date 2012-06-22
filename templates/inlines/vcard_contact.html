@@ -1,0 +1,31 @@
+<div class="personal-info">
+<h3>Personal Info</h3>
+<dl>
+{% for address in object.adr_set.all %}
+  <dt>address</dt>
+  <dd class="info-data adr" itemprop="address" itemscope itemtype="http://www.schema.org/PostalAddress">
+    <p class="street-address" itemprop="streetAddress">{{ address.street_address }}</p>
+    <p><span class="locality" itemprop="addressLocality">{{ address.locality }}</span>, <span class="region" itemprop="region">{{ address.region }}</span> <span class="postalCode" itemprop="postal-code">{{ address.postal_code }}</span></p>
+    <p><span class="country-name" itemprop="addressCountry">{{ address.country_name }}</span></p>
+  </dd>
+{% endfor %}
+{% for phone in object.tel_set.all %}
+  <dt>phone</dt>
+  <dd class="info-data">
+    <p class="tel" itemprop="telephone"><a href="tel:{{ phone.value }}">{{ phone.value }}</a></p>
+  </dd>
+{% endfor %}
+{% for email in object.email_set.all %}
+  <dt>e-mail</dt>
+  <dd class="info-data">
+    <p><a class="email" itemprop="email" href="mailto:{{ email.value }}">{{ email.value }}</a></p>
+  </dd>
+{% endfor %}
+{% for url in object.url_set.all%}
+  <dt>website</dt>
+  <dd class="info-data">
+    <p><a class="url" itemprop="url" href="{{ url.data }}">{{ url.data }}</a></p>
+  </dd>
+{% endfor %}
+</dl>
+</div>

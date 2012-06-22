@@ -1,0 +1,60 @@
+[
+    {
+        "pk": 1, 
+        "model": "vcard.contact", 
+        "fields": {
+            "family_name": "Smith", 
+            "uid": null, 
+            "honorific_suffix": "", 
+            "additional_name": "", 
+            "rev": null, 
+            "honorific_prefix": "", 
+            "bday": "2001-01-01", 
+            "given_name": "Alice", 
+            "sort_string": null, 
+            "classP": "", 
+            "fn": "Alice Smith"
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "vcard.tel", 
+        "fields": {
+            "contact": 1, 
+            "type": "cell", 
+            "value": "555-111-2222"
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "vcard.email", 
+        "fields": {
+            "contact": 1, 
+            "type": "INTERNET", 
+            "value": "alice.smith@email.com"
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "vcard.adr", 
+        "fields": {
+            "post_office_box": "", 
+            "extended_address": "", 
+            "locality": "Smallville", 
+            "region": "KS", 
+            "contact": 1, 
+            "postal_code": "66001", 
+            "country_name": "United States", 
+            "type": "home", 
+            "street_address": "1234 Main St."
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "vcard.url", 
+        "fields": {
+            "contact": 1, 
+            "data": "http://example.com"
+        }
+    }
+]

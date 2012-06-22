@@ -1,0 +1,17 @@
+BeautifulSoup==3.2.1
+Django==1.4
+Markdown==2.1.1
+PIL==1.1.7
+South==0.7.5
+git+git://github.com/fcurella/django-sortedm2m.git#egg=django-sortedm2m-git
+git+git://github.com/fcurella/django-vcard.git#egg=django-vcard-git
+django-appconf==0.5
+django-compressor==1.1.2
+git+git://github.com/pigmonkey/django-inlines.git#egg=django-inlines-git
+ipdb==0.6.1
+ipython==0.12.1
+psycopg2==2.4.5
+python-dateutil==2.1
+six==1.1.0
+vobject==0.8.1c
+wsgiref==0.1.2

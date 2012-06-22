@@ -1,0 +1,5 @@
+<div class="reference">
+    <p class="reference_name">{{ object.full_name }}</p>
+    <p class="reference_phone"><a href="tel:{{ object.phone|cut:" "|cut:"("|cut:")" }}">{{ object.phone }}</a></p>
+    <p class="reference_email"><a href="mailto:{{ object.email }}">{{ object.email }}</a></p>
+</div>

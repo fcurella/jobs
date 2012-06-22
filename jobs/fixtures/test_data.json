@@ -1,0 +1,154 @@
+[
+    {
+        "pk": 1, 
+        "model": "jobs.employer", 
+        "fields": {
+            "name": "Public Library"
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "jobs.applicationpage", 
+        "fields": {
+            "content": "Aliquam lectus orci, adipiscing et, sodales ac, feugiat non, lacus. Ut dictum velit nec est. Quisque posuere, purus sit amet malesuada blandit, sapien sapien auctor arcu, sed pulvinar felis mi sollicitudin tortor. Maecenas volutpat, nisl et dignissim pharetra, urna lectus ultrices est, vel pretium pede turpis id velit. Aliquam sagittis magna in felis egestas rutrum. Proin wisi libero, vestibulum eget, pulvinar nec, suscipit ut, mi. Integer in arcu ultricies leo dapibus ultricies. Sed rhoncus lobortis dolor. Suspendisse dolor. Mauris sapien velit, pulvinar non, rutrum non, consectetuer eget, metus. Morbi tincidunt lorem at urna. Etiam porta. Ut mauris. Phasellus tristique rhoncus magna. Nam tincidunt consequat urna. Sed tempor.\r\n\r\nAliquam lectus orci, adipiscing et, sodales ac, feugiat non, lacus. Ut dictum velit nec est. Quisque posuere, purus sit amet malesuada blandit, sapien sapien auctor arcu, sed pulvinar felis mi sollicitudin tortor. Maecenas volutpat, nisl et dignissim pharetra, urna lectus ultrices est, vel pretium pede turpis id velit. Aliquam sagittis magna in felis egestas rutrum. Proin wisi libero, vestibulum eget, pulvinar nec, suscipit ut, mi. Integer in arcu ultricies leo dapibus ultricies. Sed rhoncus lobortis dolor. Suspendisse dolor. Mauris sapien velit, pulvinar non, rutrum non, consectetuer eget, metus. Morbi tincidunt lorem at urna. Etiam porta. Ut mauris. Phasellus tristique rhoncus magna. Nam tincidunt consequat urna. Sed tempor.", 
+            "slug": "cover-letter", 
+            "title": "Cover Letter",
+            "name": "Cover Letter - Public Library"
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "jobs.applicationpage", 
+        "fields": {
+            "content": "(updated June, 2012)\r\n\r\n<inline type=\"vcard.contact\" id=\"1\" />\r\n\r\n### Work Experiences\r\n\r\n<dl>\r\n<inline type=\"jobs.workexperience\" id=\"3\" />\r\n<inline type=\"jobs.workexperience\" id=\"2\" />\r\n<inline type=\"jobs.workexperience\" id=\"1\" />\r\n</dl>\r\n\r\n### Studies\r\n\r\n<dl>\r\n<inline type=\"jobs.study\" id=\"2\" />\r\n<inline type=\"jobs.study\" id=\"1\" />\r\n</dl>\r\n\r\n### Technical Skills\r\n\r\n<inline type=\"jobs.skill\" id=\"1\" />\r\n<inline type=\"jobs.skill\" id=\"2\" />\r\n<inline type=\"jobs.skill\" id=\"3\" />\r\n<inline type=\"jobs.skill\" id=\"4\" />", 
+            "slug": "resume", 
+            "title": "Resum\u00e9",
+            "name": "Resum\u00e9"
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "jobs.applicationpage", 
+        "fields": {
+            "content": "* <inline type=\"jobs.reference\" id=\"1\" />\r\n* <inline type=\"jobs.reference\" id=\"2\" />\r\n* <inline type=\"jobs.reference\" id=\"3\" />\r\n* <inline type=\"jobs.reference\" id=\"4\" />\r\n", 
+            "slug": "references", 
+            "title": "References",
+            "name": "References"
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "jobs.application", 
+        "fields": {
+            "employer": 1, 
+            "pages": [
+                1, 
+                2, 
+                3
+            ], 
+            "key": "", 
+            "title": "Alice Smith"
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "jobs.workexperience", 
+        "fields": {
+            "start_date": "2011-05-15", 
+            "end_date": null, 
+            "content": "Director of Garage Sales."
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "jobs.workexperience", 
+        "fields": {
+            "start_date": "2010-01-01", 
+            "end_date": "2011-05-15", 
+            "content": "Lemonade Stand Main Manager."
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "jobs.workexperience", 
+        "fields": {
+            "start_date": "2007-01-01", 
+            "end_date": "2010-01-01", 
+            "content": "Lemonade Stand Clerk."
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "jobs.study", 
+        "fields": {
+            "completed": "2011-07-20", 
+            "content": "Diploma at SmallVille Middle School."
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "jobs.study", 
+        "fields": {
+            "completed": "2009-12-21", 
+            "content": "Diploma at SmallVille North Elementary School."
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "jobs.reference", 
+        "fields": {
+            "phone": "+1 (xxx) xxx-xxxx", 
+            "email": "mom@email.com", 
+            "full_name": "Mom"
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "jobs.reference", 
+        "fields": {
+            "phone": "+1 (xxx) xxx-xxx", 
+            "email": "dad@mail.com", 
+            "full_name": "Dad"
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "jobs.reference", 
+        "fields": {
+            "phone": "+1 (xxx) xxx-xxx", 
+            "email": "gramma@email.com", 
+            "full_name": "Gramma"
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "jobs.reference", 
+        "fields": {
+            "phone": "+1 (xxx) xxx-xxxx", 
+            "email": "grampa@emal.com", 
+            "full_name": "Grampa"
+        }
+    }, 
+
+    {
+        "pk": 1, 
+        "model": "jobs.skill", 
+        "fields": {
+            "content": "Archival and retrieval of books."
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "jobs.skill", 
+        "fields": {
+            "content": "Book-keeping, accounting."
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "jobs.skill", 
+        "fields": {
+            "content": "Lemon zesting and squeezing."
+        }
+    }
+]
