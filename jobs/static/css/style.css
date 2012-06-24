@@ -28,7 +28,7 @@ dd p {
 dl {
   margin-top: 0;
 }
-nav ul, nav li {
+ul, li {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -121,11 +121,6 @@ dt.work {
 }
 dd.work {
   margin-left: 6.8em;
-}
-#references ul, #references li {
-  list-style-type: none;
-  margin-left: 0;
-  padding-left: 0;
 }
 #references li {
   margin-bottom: 1em;
@@ -268,5 +263,5 @@ header {
     background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAACXBIWXMAAAsTAAALEwEAmpwYAAAApVBMVEX////////////////u9/r////////////////////O5/Dv+f3P6vTP7fi+5PPe9PzO7fmez+HP7/ue0OOOx92v5Pie2/N+v9ie3PSe3/hvvNlgsM9+0/R+1fZPqcxfy/RAoMVQxfNArNY/tuMvmsMvuO0wvPEfkr4QiLYQi7oPrOgPsO4Aib0AkckAlMwAltAAmdQAnNgAn9sAod8ApOMAqeoArO7zdD6kAAAALHRSTlMAAwcMDw8UGB8oMD9CVldXWmBgYnB4foGBiZSfn6Gxtr/CxcrQ29vg7u7z8yG5/9UAAAB+SURBVBgZjcHpAoFAGAXQmxkq2bKT7MaSkOW+/6P5ZuJ/56AKDUsPJzG0hljGEPvbPV8fBxC7PNFovkm+Li2IMYtzMqc1UhBb8lM8aDVgtTP+GDhqkbE0RalzoGN8lOq9DYWJ4OjkdH2SXEUeHC/sp2k664Ye/lQQBH4NVX0BPoMQfWj8zgoAAAAASUVORK5CYII=) no-repeat center left;
 }
 .github {
-    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAAAAAA6mKC9AAAAxUlEQVQYGQXBsWYEQQCA4Z9jq2MfIFy17bAcIWybdlmWcFXae4m0aY+Q6jiWae8B0i6pllQhXDVMlWoJ0/75PlQ1LUtSVVRjS13TRlW0jNvTj95O27EoOnTXm2r66AbFeLc+0+3Dnpd1F8X27AEADp5byVX53QAA36XKzI1fAACzzczc+FcBAMlmJlfFaQPA0VJlDJfjlF/hadZLEONufezv4UHXXRTtu/w5QDB3vaKlr99GaN7roSiqUwAIkyqqmpYlqeo/YC+RM6qBDWAAAAAASUVORK5CYII=) no-repeat center left;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAABDElEQVQ4y5XTsUoDYRAE4K8NCFZWQipBsBKshLQ+gG0gIKQSBFtbX8LWKiAIgbS2B4IgBK5NFfABhFQB4Wwm8hMup/6w3PHvzNzO7h67Tx9nib5/nCHmaPCZaHI37CL28IwVbnFc5I5ytwqm1yYwRYXLENosXQQzbSv7A/t4TMkV3lHn2eA+mOW2nTnGeZ8E3BaTYMbhgEOs4+sAXx0CDU6CXYdrgEXETn8hN8ELZ7AtsBflLoH+tkBpAUYdNh6Kkf9YkE5fBTBK4q4gPhWlC7beHuMyI3rBDG+FwGuBbR2jkKp8/TzLshGoi4lVwbau8iy7f5OV3QgscJ3cdNcqK5pYtzSwTu7P50+/8zfOxW3P7jmnSwAAAABJRU5ErkJggg==) no-repeat center left;
 }
