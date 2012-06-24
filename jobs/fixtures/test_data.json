@@ -56,7 +56,8 @@
         "fields": {
             "start_date": "2011-05-15", 
             "end_date": null, 
-            "content": "Director of Garage Sales."
+            "content": "Director of Garage Sales.",
+            "name": "garage sales - director"
         }
     }, 
     {
@@ -65,7 +66,8 @@
         "fields": {
             "start_date": "2010-01-01", 
             "end_date": "2011-05-15", 
-            "content": "Lemonade Stand Main Manager."
+            "content": "Lemonade Stand Main Manager.",
+            "name": "lemonade manager"
         }
     }, 
     {
@@ -74,7 +76,8 @@
         "fields": {
             "start_date": "2007-01-01", 
             "end_date": "2010-01-01", 
-            "content": "Lemonade Stand Clerk."
+            "content": "Lemonade Stand Clerk.",
+            "name": "lemonade sales"
         }
     }, 
     {
@@ -82,7 +85,8 @@
         "model": "jobs.study", 
         "fields": {
             "completed": "2011-07-20", 
-            "content": "Diploma at SmallVille Middle School."
+            "content": "Diploma at SmallVille Middle School.",
+            "name": "middle school"
         }
     }, 
     {
@@ -90,7 +94,8 @@
         "model": "jobs.study", 
         "fields": {
             "completed": "2009-12-21", 
-            "content": "Diploma at SmallVille North Elementary School."
+            "content": "Diploma at SmallVille North Elementary School.",
+            "name": "elementary school"
         }
     }, 
     {
@@ -134,21 +139,24 @@
         "pk": 1, 
         "model": "jobs.skill", 
         "fields": {
-            "content": "Archival and retrieval of books."
+            "content": "Archival and retrieval of books.",
+            "name": "archiving"
         }
     }, 
     {
         "pk": 3, 
         "model": "jobs.skill", 
         "fields": {
-            "content": "Book-keeping, accounting."
+            "content": "Book-keeping, accounting.",
+            "name": "books"
         }
     }, 
     {
         "pk": 4, 
         "model": "jobs.skill", 
         "fields": {
-            "content": "Lemon zesting and squeezing."
+            "content": "Lemon zesting and squeezing.",
+            "name": "lemons"
         }
     }
 ]
