@@ -11,7 +11,7 @@ class ApplicationPageInline(admin.StackedInline):
 
 
 class ApplicationAdmin(admin.ModelAdmin):
-    list_display = ('title', 'employer')
+    list_display = ('name', 'employer')
     inlines = [
         ApplicationPageInline
     ]
