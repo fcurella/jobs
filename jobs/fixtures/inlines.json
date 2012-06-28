@@ -1,0 +1,50 @@
+[
+    {
+        "pk": 1, 
+        "model": "inlines.inlinetype", 
+        "fields": {
+            "content_type": ["jobs", "workexperience"], 
+            "title": "work experience"
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "inlines.inlinetype", 
+        "fields": {
+            "content_type": ["vcard", "contact"], 
+            "title": "contact"
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "inlines.inlinetype", 
+        "fields": {
+            "content_type": ["jobs", "skill"], 
+            "title": "skill"
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "inlines.inlinetype", 
+        "fields": {
+            "content_type": ["jobs", "study"], 
+            "title": "study"
+        }
+    }, 
+    {
+        "pk": 5, 
+        "model": "inlines.inlinetype", 
+        "fields": {
+            "content_type": ["jobs", "reference"], 
+            "title": "reference"
+        }
+    }, 
+    {
+        "pk": 6, 
+        "model": "inlines.inlinetype", 
+        "fields": {
+            "content_type": ["jobs", "link"], 
+            "title": "links"
+        }
+    }
+]
