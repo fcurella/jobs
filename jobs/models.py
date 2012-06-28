@@ -79,7 +79,7 @@ class WorkExperience(ContentModel):
         ordering = ('-start_date',)
 
     def __unicode__(self):
-        return "%s - %s: %s" % (self.start_date.strftime("%Y"), (self.end_date and self.end_date.strftime("%Y") or u"present"), self.title)
+        return "%s - %s: %s" % (self.start_date.strftime("%Y"), (self.end_date and self.end_date.strftime("%Y") or u"present"), self.content)
 
 
 class Study(ContentModel):
