@@ -45,7 +45,7 @@ class Application(NamedModel):
     title = models.CharField(max_length=255)
     employer = models.ForeignKey(Employer)
     pages = SortedManyToManyField(ApplicationPage)
-    key = models.CharField(max_length=256, blank=True)
+    key = models.CharField(max_length=256, blank=True, db_index=True)
     attachment = models.FileField(upload_to="attachments/applications/", blank=True)
 
     @models.permalink
@@ -72,7 +72,7 @@ class GenericContent(ContentModel):
 
 
 class WorkExperience(ContentModel):
-    start_date = models.DateField(default=datetime.datetime.today)
+    start_date = models.DateField(default=datetime.datetime.today, db_index=True)
     end_date = models.DateField(blank=True, null=True, default=datetime.datetime.today)
 
     class Meta:
@@ -83,7 +83,7 @@ class WorkExperience(ContentModel):
 
 
 class Study(ContentModel):
-    completed = models.DateField(default=datetime.datetime.today)
+    completed = models.DateField(default=datetime.datetime.today, db_index=True)
 
     class Meta:
         verbose_name_plural = 'studies'
