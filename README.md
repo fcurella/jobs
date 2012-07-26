@@ -14,7 +14,7 @@ The following inlines are defined:
   * a generic ``GenericTitle``, which is composed of just a ``TextField``
   * ``WorkExperience``
   * ``Study``
-  * ``Reference
+  * ``Reference``
   * ``Skill``
   * ``Link``
 
