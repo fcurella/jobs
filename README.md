@@ -11,7 +11,7 @@ Users can build different ``Applications``, each composed of reusable ``Applicat
 Using inlines, it's possibile to define snippets of common text that can be reused across pages and applications.
 
 The following inlines are defined:
-  * a generic ``GenericTitle``, which is composed of just a `TextField``
+  * a generic ``GenericTitle``, which is composed of just a ``TextField``
   * ``WorkExperience``
   * ``Study``
   * ``Reference
